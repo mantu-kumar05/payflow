@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PayFlow
 
-## Getting Started
+**Payment Operations Dashboard**
 
-First, run the development server:
+![PayFlow dashboard](docs/payflow-dashboard.png)
 
-```bash
+PayFlow is a responsive payment operations dashboard for monitoring transactions, revenue and customers in one place. It is a frontend-only project built for portfolio and demonstration purposes.
+
+## 🚀 Features
+
+- Revenue monitoring with summary cards for key payment metrics
+- Transaction list with search and status filtering
+- Customer management views
+- 8 routes: dashboard, payments, customers, profile, settings, and    login, signup and forgot-password screens 
+- Responsive layout built from reusable components
+
+## 📄 Pages
+
+| Route | Page |
+|---|---|
+| `/` | Dashboard with revenue and payment overview |
+| `/payments` | Transactions with search and status filtering |
+| `/customers` | Customer management |
+| `/profile` | User profile |
+| `/settings` | Account and application settings |
+| `/login` | Login screen |
+| `/signup` | Sign-up screen |
+| `/forgot-password` | Password reset screen |
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16, React 19 |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4, shadcn/ui |
+| Icons | Lucide React |
+| Linting | ESLint |
+
+## ⚙️ Getting Started
+
+**Prerequisites:** Node.js 20 or newer.
+
+```
+git clone https://github.com/mantu-kumar05/payflow.git
+cd payflow
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Other scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+|---|---|
+| `npm run build` | Creates a production build |
+| `npm run start` | Runs the production build |
+| `npm run lint` | Runs ESLint |
 
-## Learn More
+## 🔐 Development Note
 
-To learn more about Next.js, take a look at the following resources:
+PayFlow is a frontend demonstration. It does not connect to a real payment provider or process real transactions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is intended for educational, demonstration and portfolio use.
